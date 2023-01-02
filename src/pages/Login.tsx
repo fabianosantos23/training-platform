@@ -1,4 +1,3 @@
-import { gql, useMutation } from "@apollo/client";
 import { Logo } from "../components/Logo";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
@@ -30,10 +29,10 @@ export function Login() {
       <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
         <div className="max-w-[640px]">
           <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
+          <h1 className="mt-8 text-white text-[2.5rem] leading-tight">
             Faça seu treinamento <strong className="text-blue-500">EAGLE</strong> 
           </h1>
-          <p className="mt-4 text-gray-200 leading-relaxed">
+          <p className="mt-4 text-white leading-relaxed">
             O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias.
           </p>
         </div>

@@ -39,23 +39,23 @@ export function Video( props: VideoProps) {
       <div className="p-8 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-2xl font-bold text-black">
               {data.lesson.title}
             </h1>
-            <p className="mt-4 text-gray-200 leading-relaxed">
+            <p className="mt-4 text-black leading-relaxed">
               {data.lesson.description}
             </p>
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6 ">
                 <img 
-                  className="h-16 2-16 rounded-full border-2 border-blue-500"
+                  className="h-16 2-16 rounded-full border-2 border-orange-600"
                   src={data.lesson.teacher.avatarURL} alt="" 
                 />
                 <div className="leading-relaxed">
-                  <strong className="font-blue text-2xl block">
+                  <strong className="font-blue text-2xl block text-black">
                     {data.lesson.teacher.name}
                   </strong>
-                  <span className="text-gray-200 text-sm block">
+                  <span className="text-black text-sm block">
                   {data.lesson.teacher.bio}
                   </span>
                 </div>
@@ -69,7 +69,7 @@ export function Video( props: VideoProps) {
               Comunidade do Discord
             </a>
 
-            <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+            <a href="" className="p-4 text-sm border border-orange-600 text-orange-600 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-orange-600 hover:text-gray-900 transition-colors">
               <Lightning size={24} />
               Acesse o desafio
             </a>
@@ -77,13 +77,13 @@ export function Video( props: VideoProps) {
         </div>
       
         <div className="gap-8 mt-20 grid grid-cols-2">
-          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+          <a href="" className="bg-orange-400 rounded overflow-hidden flex items-stretch gap-6 hover:bg-orange-600 transition-colors">
             <div className="bg-green-700 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Material Complementar</strong>
-              <p className="text-sm text-gray-200 mt-2">
+              <strong className="text-2xl text-white">Material Complementar</strong>
+              <p className="text-sm text-white mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
             </div>
@@ -92,13 +92,13 @@ export function Video( props: VideoProps) {
             </div>
           </a>
 
-          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+          <a href="" className="bg-orange-400 rounded overflow-hidden flex items-stretch gap-6 hover:bg-orange-600 transition-colors">
             <div className="bg-green-700 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Wallpapers exclusivos</strong>
-              <p className="text-sm text-gray-200 mt-2">
+              <strong className="text-2xl text-white">Wallpapers exclusivos</strong>
+              <p className="text-sm text-white mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
             </div>
