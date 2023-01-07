@@ -31,8 +31,10 @@ export function Lesson(props: LessonProps) {
 
       <div 
         className={classNames(
-          'rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500',
-          { 'bg-green-500': isActiveLesson }
+          'rounded-2xl p-4 mt-2 group-hover:border-green-500',
+          { 'bg-blue-600': isActiveLesson,
+            'bg-gray-50': !isActiveLesson
+          }
         )}
       
       >
@@ -43,7 +45,7 @@ export function Lesson(props: LessonProps) {
             className={classNames(
               'text-sm font-medium flex items-center gap-2',{ 
                 'text-white': isActiveLesson,
-                'text-blue-500': !isActiveLesson
+                'text-orange-500': !isActiveLesson
               }
             )}>
               <CheckCircle size={20} />
@@ -58,9 +60,9 @@ export function Lesson(props: LessonProps) {
 
           <span 
             className={classNames(
-              'text-xs rounded py-[2px] px-2 text-white border font-bold',{ 
-                'border-white': isActiveLesson,
-                'border-green-300': !isActiveLesson
+              'text-xs rounded py-[2px] px-2 border font-bold',{ 
+                'border-white text-white': isActiveLesson,
+                'border-orange-500 text-orange-500': !isActiveLesson
               }
             )}
           >
@@ -71,7 +73,7 @@ export function Lesson(props: LessonProps) {
         <strong className={classNames(
           'mt-5 block',{ 
             'text-white': isActiveLesson,
-            'text-grey-200': !isActiveLesson
+            'text-gray-200': !isActiveLesson
           }
         )}>
           {props.title}
